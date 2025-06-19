@@ -4,28 +4,32 @@
 #include <string>
 #include <unordered_map>
 using namespace std;
-
+//19.06 lab answers
 int powerOfNum(int base, int exp) {
     if (exp == 0) return 1;
 
     return base * powerOfNum(base, exp - 1);
 }
 
-int series(int n) {
-    if (n == 0) return 0;
-
-    return 1/n + series(n-1);
+double sumSeries(int n) {
+    if (n == 1) {
+        return 1.0;
+    }
+    return 1.0 / (n * n) + sumSeries(n - 1);
 }
 
+double sumSeries2(int n) {
+    if (n == 1)
+        return 1.0 / (1 * 3);
 
+    return 1.0 / (n * (n + 2)) + sumSeries(n - 1);
+}
 
-
-
-
-
-
-
-
+int sumOfDigits(int n) {
+    if (n == 0)
+        return 0;
+    return (n % 10) + sumOfDigits(n / 10);
+}
 
 int multiplyTwo(int num1, int num2) {
     if (num2 == 0) {
@@ -161,7 +165,7 @@ int octal2Dec(const int& octalNumber) {
 int main() {
     // cout << powerOfNum(10,2) << endl;
 
-    cout<<series(3)<<endl;
+    cout<<sumSeries(3)<<endl;
 
     // int num1, num2;
     // cin >> num1 >> num2;

@@ -165,7 +165,7 @@ int octal2Dec(const int& octalNumber) {
 int main() {
     // cout << powerOfNum(10,2) << endl;
 
-    cout<<sumSeries(3)<<endl;
+    // cout<<sumSeries(3)<<endl;
 
     // int num1, num2;
     // cin >> num1 >> num2;
@@ -184,4 +184,6 @@ int main() {
     //
     // int decimal = octal2Dec(octalInput);
     // cout << "The decimal number is: " << decimal << endl;
+
+
 }

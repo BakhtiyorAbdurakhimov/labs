@@ -3,6 +3,14 @@
 #include <sstream>
 #include <string>
 #include <unordered_map>
+
+#include "lab10.h"
+
+void printArray(int array[], int size) {
+    for (int i = 0; i < size; i++)
+        std::cout << array[i] << " ";
+    std::cout << std::endl;
+}
 using namespace std;
 //19.06 lab answers
 int powerOfNum(int base, int exp) {
@@ -184,6 +192,38 @@ int main() {
     //
     // int decimal = octal2Dec(octalInput);
     // cout << "The decimal number is: " << decimal << endl;
+    // double m[SIZE][SIZE] = {
+    //     {2.0, 4.5, 1.2, 7.8},
+    //     {9.3, 5.6, 0.8, 3.1},
+    //     {6.4, 8.7, 2.9, 4.0},
+    //     {5.2, 1.7, 3.5, 6.8}
+    // };
+    //
+    // double result = lab10::sumMajorDiagonal(m);
+    // std::cout << "Sum of major diagonal: " << result << std::endl;
+
+    // int arr[] = {64, 25, 12, 22, 11};
+    // int size = sizeof(arr) / sizeof(arr[0]);
+    //
+    // std::cout << "Original array: ";
+    // printArray(arr, size);
+    //
+    // lab10::bubbleSort(arr, size);
+    //
+    // std::cout << "Sorted array (increasing): ";
+    // printArray(arr, size);
+
+    // double matrix[3][SIZE] = {
+    //     {1.0, 2.0, 3.0, 4.0},
+    //     {5.0, 6.0, 7.0, 8.0},
+    //     {9.0, 10.0, 11.0, 12.0}
+    // };
+    //
+    // int targetColumn = 2;
+    //
+    // double result = lab10::sumColumn(matrix, 3, targetColumn);
+    // cout << "Sum of column " << targetColumn << ": " << result << endl;
+
 
 
 }

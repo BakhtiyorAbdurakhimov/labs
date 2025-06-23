@@ -19,4 +19,6 @@ add_executable(untitled main.cpp
         lab6.cpp
         lab6.h
         lab7.cpp
-        lab7.h)
+        lab7.h
+        lab10.cpp
+        lab10.h)

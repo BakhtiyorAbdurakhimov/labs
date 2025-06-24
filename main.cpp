@@ -5,6 +5,7 @@
 #include <unordered_map>
 
 #include "lab10.h"
+#include "lab11.h"
 
 void printArray(int array[], int size) {
     for (int i = 0; i < size; i++)
@@ -224,6 +225,43 @@ int main() {
     // double result = lab10::sumColumn(matrix, 3, targetColumn);
     // cout << "Sum of column " << targetColumn << ": " << result << endl;
 
+    // lab11::problem1();
+    // lab11::problem2();
 
+    // int size;
+    // cout << "Enter size of array: ";
+    // cin >> size;
+    //
+    // int* arr = new int[size];
+    // cout << "Enter " << size << " integers: ";
+    // for (int i = 0; i < size; i++) {
+    //     cin >> *(arr + i);
+    // }
+    //
+    // int result = lab11::problem3(arr, size);
+    // cout << "Number of even numbers: " << result << endl;
+    //
+    // delete[] arr;
 
+    // int a[] = {1, 2, 3, 4, 5};
+    // int b[] = {5, 4, 3, 2, 1};
+    // int size = 5;
+    //
+    // if (lab11::problem4(a, b, size))
+    //     cout << "Arrays are mirrored." << endl;
+    // else
+    //     cout << "Arrays are NOT mirrored." << endl;
+
+    // const int SIZE = 5;
+    // double a[SIZE] = {1.1, 2.2, 3.3, 4.4, 5.5};
+    // double b[SIZE] = {5.5, 4.4, 3.3, 2.2, 1.1};
+    // double result[SIZE];
+    //
+    // lab11::problem5(a, b, result, SIZE);
+    //
+    // cout << "Element-wise sum: ";
+    // for (int i = 0; i < SIZE; i++) {
+    //     cout << *(result + i) << " ";
+    // }
+    // cout << endl;
 }
